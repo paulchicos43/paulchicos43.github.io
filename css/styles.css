@@ -121,7 +121,7 @@ body {
   margin-right: auto;
   margin-bottom: 15px;
   width: 98%;
-  background: radial-gradient(#03c6fc, #07a3f7);
+  background: radial-gradient(#91a9af, #6e7980);
   color: white;
 }
 
@@ -134,7 +134,7 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px rgba(255, 255, 255, 0.18) solid;
-  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 4px 16px 0 rgba(84, 86, 124, 0.37);
   margin-left: auto;
   margin-right: auto;
   width: 800px;
