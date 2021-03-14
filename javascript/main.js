@@ -1,6 +1,10 @@
 const canvas = document.getElementById('canvas1');
 const context = canvas.getContext('2d');
+const my_work_button = document.getElementById('my_work_button');
 
+my_work_button.onclick = function() {
+    window.location.href = "#projects_section";
+}
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
@@ -29,7 +33,6 @@ for(let i = 0; i < 15; i++) {
     particles.push(new_particle);
 }
 
-let font_direction = 1;
 const draw = function(timestamp) {
     const squareHeight = 20;
     const squareWidth = 20;
@@ -40,15 +43,15 @@ const draw = function(timestamp) {
         context.fillStyle = particles[i].color;
 
         context.fillRect(0,0,squareWidth,squareHeight);
-        particles[i].x += particles[i].dx * 2;
-        particles[i].y += particles[i].dy * 2;
+        particles[i].x += particles[i].dx * 1;
+        particles[i].y += particles[i].dy * 1;
         context.restore();
 
 
-        if(particles[i].x > canvas.width || particles[i].x < 0) {
+        if(particles[i].x > canvas.width - 20 || particles[i].x < 0) {
             particles[i].dx = -1 * particles[i].dx;
         }
-        if(particles[i].y > canvas.height || particles[i].y < 0) {
+        if(particles[i].y > canvas.height - 20 || particles[i].y < 0) {
             particles[i].dy = -1 * particles[i].dy;
         }
     }
